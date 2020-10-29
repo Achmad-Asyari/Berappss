@@ -63,3 +63,9 @@ head.appendChild(style);
         (d.head || d.body).appendChild(s);
     })();
 </script>
+<div id='disqus_empty'/>
+<script>
+//<![CDATA[
+function load_disqus(e){var t=document.getElementById("disqus_empty"),d=document.getElementById("disqus_thread"),n=document.createElement("script"),s=document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0];d&&t&&(n.type="text/javascript",n.async=!0,n.src="//"+e+".disqus.com/embed.js",s.appendChild(n),t.remove())}window.addEventListener("scroll",function(e){var t=document.scrollingElement.scrollTop,d=document.getElementById("disqus_thread");d&&t>d.getBoundingClientRect().top-150&&(load_disqus(getQueryVariable('shortname')),console.log("Disqus loaded."))},!1);
+//]]>
+</script>
